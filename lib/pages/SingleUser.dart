@@ -72,19 +72,19 @@ class _SingleUserState extends State<SingleUser> {
                     SizedBox(
                       height: 20,
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        makeFollowWidgets(count: widget.user.followers, name: "Followers"),
-                        Container(
-                          width: 2,
-                          height: 15,
-                          margin: EdgeInsets.symmetric(horizontal: 20),
-                          color: Colorsys.lightGrey,
-                        ),
-                        makeFollowWidgets(count: widget.user.following, name: "Following"),
-                      ],
-                    ),
+                    // Row(
+                    //   mainAxisAlignment: MainAxisAlignment.center,
+                    //   children: [
+                    //     makeFollowWidgets(count: widget.user.followers, name: "Followers"),
+                    //     Container(
+                    //       width: 2,
+                    //       height: 15,
+                    //       margin: EdgeInsets.symmetric(horizontal: 20),
+                    //       color: Colorsys.lightGrey,
+                    //     ),
+                    //     makeFollowWidgets(count: widget.user.following, name: "Following"),
+                    //   ],
+                    // ),
                     SizedBox(
                       height: 20,
                     ),

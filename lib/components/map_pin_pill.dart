@@ -2,14 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app_map_test01/models/pin_pill_info.dart';
 import 'dart:async';
 import 'package:flutter/cupertino.dart';
-//import 'package:flutter_app_map_test01/screens/profile_screens.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:geolocator/geolocator.dart';
-import 'dart:math' as math;
-import 'package:flutter_app_map_test01/pages/home/index.dart';
 
-import 'package:flutter_app_map_test01/pages/home/map_utils.dart';
-import 'dart:typed_data';
+import 'dart:math' as math;
+
 
 
 //자기 상태창

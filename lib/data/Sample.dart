@@ -82,6 +82,7 @@ class Sample{
       ),
     ],
   );
+
   static User Sang_rok = new User(
     name: "Sang_rok",
     profilePicture: "assets/pics/Sang_rok.png",
@@ -109,7 +110,7 @@ class Sample{
             ),
             new Post(
                 location: "paris, France",
-                dateAgo: "3 month ago",
+                dateAgo: "3 months ago",
                 photos: [
                   'assets/pics/four.jpg',
                   'assets/pics/five.jpg',
@@ -120,6 +121,7 @@ class Sample{
       ),
     ],
   );
+
   static User Xang_gi = new User(
     name: "Xang_gi",
     profilePicture: "assets/pics/xang_gi.png",
@@ -137,7 +139,7 @@ class Sample{
           thumbnail: "assets/pics/xang_gi.png",
           posts: [
             new Post(
-                location: "타이베이, 대만",
+                location: "Incheon",
                 dateAgo: "2 days ago",
                 photos: [
                   'assets/pics/xang_gi02.png',
@@ -160,30 +162,29 @@ class Sample{
 
   static Post postOne = new Post(
       user: seong_il,
-      location: "Taibei, Taiwan",
+      location: "Inha Univ, Incheon",
       dateAgo: "3 hours ago",
       photos: [
-        'assets/pics/one.jpg',
-        'assets/pics/two.jpg',
-        'assets/pics/three.jpg',
+        'assets/pics/route (1).png',
+        'assets/pics/walkie (1).jpg',
+        'assets/pics/walkie (2).jpg',
+        'assets/pics/walkie (3).jpg',
       ],
       relatedPhotos: [
-        'assets/pics/two.jpg',
-        'assets/pics/three.jpg',
         'assets/pics/five.jpg',
-        'assets/pics/six.jpg',
-        'assets/pics/eight.jpg',
+        'assets/pics/three.jpg',
+        'assets/pics/two.jpg',
       ]
   );
+
   static Post postTwo = new Post(
       user: hanho,
-      location: "seoul, Korea",
+      location: "Incheon",
       dateAgo: "7 hours ago",
       photos: [
-        'assets/pics/six.jpg',
-        'assets/pics/seven.jpg',
-        'assets/pics/eight.jpg',
-
+        'assets/pics/route (2).png',
+        'assets/pics/walkie (5).jpg',
+        'assets/pics/walkie (4).jpg',
       ],
       relatedPhotos: [
         'assets/pics/seven.jpg',
@@ -193,14 +194,16 @@ class Sample{
         'assets/pics/three.jpg',
       ]
   );
+
   static Post postThree = new Post(
       user: Sang_rok,
-      location: "신촌, 서울",
+      location: "Incheon",
       dateAgo: "2 days ago",
       photos: [
-        'assets/pics/Sang_rok01.png',
-        'assets/pics/Sang_rok02.png',
+        'assets/pics/route (3).png',
         'assets/pics/Sang_rok03.png',
+        'assets/pics/walkie (7).jpg',
+        'assets/pics/walkie (8).jpg',
       ],
       relatedPhotos: [
         'assets/pics/two.jpg',
@@ -210,11 +213,13 @@ class Sample{
         'assets/pics/eight.jpg',
       ]
   );
+
   static Post postFour = new Post(
       user: Xang_gi,
-      location: "타이베이, 대만",
-      dateAgo: "4 month ago",
+      location: "Incheon",
+      dateAgo: "4 months ago",
       photos: [
+        'assets/pics/route (4).png',
         'assets/pics/xang_gi02.png',
         'assets/pics/xang_gi03.png',
       ],

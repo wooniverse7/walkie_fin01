@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_map_test01/pages/home/index.dart';
+
 import 'package:flutter_app_map_test01/constants/common_size.dart';
+import 'package:flutter_app_map_test01/pages/home/index.dart';
 
 class ProfileScreens extends StatelessWidget {
   @override
@@ -12,7 +13,7 @@ class ProfileScreens extends StatelessWidget {
         backgroundColor: Colors.white10,
         elevation: 0,
         title: Text(
-          "기록",
+          "Woosi 님의 기록",
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
@@ -74,7 +75,7 @@ class ProfileScreens extends StatelessWidget {
                               height: 10,
                             ),
                             Text(
-                              "18m12s",
+                              "16m12s",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 16,
@@ -109,7 +110,7 @@ class ProfileScreens extends StatelessWidget {
                               height: 10,
                             ),
                             Text(
-                              "3.05 Km",
+                              "1.25 Km",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 16,
@@ -144,7 +145,7 @@ class ProfileScreens extends StatelessWidget {
                               height: 10,
                             ),
                             Text(
-                              "3,503",
+                              "1,964",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 16,
@@ -211,7 +212,7 @@ class ProfileScreens extends StatelessWidget {
                               onPressed: () {
                                 Navigator.push(context, MaterialPageRoute<void>(
                                     builder: (BuildContext context) {
-                                      return Second();
+                                      return Course2();
                                     }));
                               },
                             ),
@@ -303,7 +304,7 @@ class ProfileScreens extends StatelessWidget {
 //}
 }
 
-class Course1 extends StatelessWidget {
+class Course2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -313,7 +314,7 @@ class Course1 extends StatelessWidget {
         backgroundColor: Colors.orange,
         elevation: 5,
         title: Text(
-          "우리 동네 산책길",
+          "인하대 한 바퀴",
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
@@ -460,10 +461,9 @@ class Course1 extends StatelessWidget {
                 height: 10,
               ),
               Text(
-                "산책 코스",
+                "2020/12/14  23:12",
                 style: TextStyle(
                     color: Colors.grey[800],
-                    fontWeight: FontWeight.bold,
                     fontSize: 20),
               ),
               SizedBox(
@@ -484,7 +484,238 @@ class Course1 extends StatelessWidget {
                           border: Border(
                               bottom: BorderSide(color: Colors.grey[200]))),
                       child: Image.asset(
-                        'assets/result.png',
+                        'assets/pics/route (1).png',
+                        width: 300,
+                        height: 250,
+                      ),
+                    ),
+                    Container(
+                      width: double.infinity,
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                          border: Border(
+                              bottom: BorderSide(color: Colors.grey[200]))),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          SizedBox(
+                            height: 0,
+                          ),
+                          Row(
+                            children: <Widget>[
+                              Expanded(
+                                child: RaisedButton(
+                                  child: Text('닫기',
+                                      style: TextStyle(
+                                          color: Colors.white, fontSize: 21)),
+                                  color: Colors.grey,
+                                  onPressed: () {
+                                    Navigator.pop(context);
+                                    FocusScopeNode currentFocus = FocusScope.of(context);
+                                    currentFocus.unfocus();
+                                  },
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius:
+                                      new BorderRadius.circular(30.0)),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class Course1 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      resizeToAvoidBottomInset : false,
+      appBar: AppBar(
+        brightness: Brightness.light,
+        backgroundColor: Colors.orange,
+        elevation: 5,
+        title: Text(
+          "우리 동네 산책길",
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
+        actions: <Widget>[
+          //   Padding(
+          //     padding: const EdgeInsets.all(10.0),
+          //       child: CircleAvatar(
+          //         backgroundImage: ExactAssetImage('assets/pics/normal01.jpg'),
+          //       ),
+          //   )
+        ],
+      ),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Padding(
+          padding: EdgeInsets.all(20.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              // SizedBox(height: 10,),
+              //  Text("Today", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.grey[800]),),
+              SizedBox(
+                height: 0,
+              ),
+              Row(
+                children: <Widget>[
+                  Expanded(
+                    child: Container(
+                      width: 100,
+                      margin: EdgeInsets.only(right: 10),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          gradient: LinearGradient(
+                              colors: [Colors.red, Colors.orange])),
+                      child: Padding(
+                        padding: EdgeInsets.all(9.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              "시간",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 5,
+                            ),
+                            Text(
+                              "6분 41초",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      width: 100,
+                      margin: EdgeInsets.only(right: 10),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          gradient: LinearGradient(
+                              colors: [Colors.red, Colors.orange])),
+                      child: Padding(
+                        padding: EdgeInsets.all(9.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              "거리",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                              "0.42 km",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      width: 100,
+                      margin: EdgeInsets.only(right: 10),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          gradient: LinearGradient(
+                              colors: [Colors.red, Colors.orange])),
+                      child: Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              "걸음",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                              "657",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                "2020/11/28  21:02",
+                style: TextStyle(
+                    color: Colors.grey[800],
+                    fontSize: 20),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.white),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    Container(
+                      width: double.infinity,
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                          border: Border(
+                              bottom: BorderSide(color: Colors.grey[200]))),
+                      child: Image.asset(
+                        'assets/pics/route (3).png',
                         width: 300,
                         height: 250,
                       ),

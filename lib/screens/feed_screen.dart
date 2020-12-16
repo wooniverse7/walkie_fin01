@@ -176,23 +176,23 @@ class _FeedScreenState extends State<FeedScreen> {
                                       child:Row(
                                           mainAxisAlignment: MainAxisAlignment.end,
                                           children:[
-                                            ClipRect(
-                                              child: BackdropFilter(
-                                                  filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
-                                                  child: Container(
-                                                    width: 30.0,
-                                                    height: 30.0,
-                                                    padding: EdgeInsets.all(5),
-                                                    decoration: BoxDecoration(
-                                                        borderRadius: BorderRadius.circular(4),
-                                                        color: Colors.grey[600].withOpacity(0.1)
-                                                    ),
-                                                    child: Center(
-                                                        child: Image.asset('assets/images/link01.png')
-                                                    ),
-                                                  )
-                                              ),
-                                            ),
+                                            // ClipRect(
+                                            //   child: BackdropFilter(
+                                            //       filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+                                            //       child: Container(
+                                            //         width: 30.0,
+                                            //         height: 30.0,
+                                            //         padding: EdgeInsets.all(5),
+                                            //         decoration: BoxDecoration(
+                                            //             borderRadius: BorderRadius.circular(4),
+                                            //             color: Colors.grey[600].withOpacity(0.1)
+                                            //         ),
+                                            //         child: Center(
+                                            //             child: Image.asset('assets/images/link01.png')
+                                            //         ),
+                                            //       )
+                                            //   ),
+                                            // ),
                                             SizedBox(width: 10,),
                                             ClipRect(
                                               child: BackdropFilter(
